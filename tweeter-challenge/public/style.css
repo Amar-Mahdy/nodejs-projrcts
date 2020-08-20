@@ -1,0 +1,36 @@
+
+
+.card{
+   text-align:center ;
+   margin: auto;
+   margin-top:20px ;
+}
+.enter{
+    margin:100px 30%;
+}
+#emailHelp{
+    color: red !important;
+}
+.container{
+    
+    padding: 30px;
+    padding-left: 20px;
+    justify-content: center;
+    
+    margin-bottom: 60px;
+}
+.container .row h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container .row button{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin:20px 20px;
+    
+}
+.container .row button::before:hover{
+    color: white;
+}
+.container .row hr{
+    border: solid 0.2px gray;
+}

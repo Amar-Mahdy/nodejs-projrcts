@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<%- include('./components/header') %>
+
+
+<% if(result.length > 0) {%>
+
+<% result.forEach(element =>{ %>
+   
+   
+   
+   <div>
+    <div class="card" style="width: 50rem;">
+        <div class="card-body">
+          
+          <h5 class="card-title">
+              <%= element.title %> 
+          </h5>
+         
+          <p class="card-text"><%= element.tweet %></p>
+         <br>
+          <a href=/tweet/<%= element._id%> class="card-link">See More</a>
+
+
+
+           
+          
+         
+            
+            
+        </div>
+      </div>
+   </div>
+   
+   
+
+<%})%>
+<%} else{ %>
+   there are no tweets Ammar " we are sorry "
+<%}%>
+
+<%- include('./components/footer') %>
+
+
+    
+</body>
+</html>
+
+
+
+

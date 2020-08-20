@@ -1,0 +1,43 @@
+
+
+   
+
+    <%- include('./components/header') %>
+
+   
+    <form class="enter" method="post" action="add-tweet">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Title</label>
+          <input type="text" name="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter title">
+
+          <% if(err && err.title) { %>
+
+          <small id="emailHelp" class="form-text text-muted">
+              <%= err['title'].message %>
+          </small>
+
+          <%}%>
+
+        </div>
+
+        <div class="form-group">
+          <label for="exampleInputPassword1">Tweet</label>
+          <input type="text" name="tweet" class="form-control" id="exampleInputPassword1" placeholder="Enter tweet">
+
+          <% if(err && err.tweet) { %> 
+
+            <small id="emailHelp" class="form-text text-muted">
+                
+                <%= err['tweet'].message %>
+            </small>
+            <%}%>
+
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+   
+
+
+<%- include('./components/footer') %>
+

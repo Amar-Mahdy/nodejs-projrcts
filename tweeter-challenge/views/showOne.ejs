@@ -1,0 +1,29 @@
+
+
+
+
+ <%- include('./components/header') %>
+
+
+ <% if(result) {%>
+ 
+    <div class="card">
+        <div class="card-header">
+          Single Tweet
+        </div>
+        <div class="card-body">
+          <h5 class="card-title"><%= result.title %></h5>
+          <p class="card-text"><%= result.tweet %></p>
+          <a href=/edit-tweet/<%= result._id %> class="btn btn-primary">update</a>
+          <a href=/delete-tweet/<%= result._id %> class="btn btn-warning">delete</a>
+        </div>
+      </div>
+    
+    
+ 
+ 
+ <%} else{ %>
+    there is no Tweets
+ <%}%>
+ 
+ <%- include('./components/footer') %>
